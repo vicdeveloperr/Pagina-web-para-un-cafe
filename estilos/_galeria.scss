@@ -1,0 +1,19 @@
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 0;
+    overflow: hidden;
+}
+.galeria__img{
+    transition-duration: 500ms;
+    flex-grow: 1;
+    min-width: 25%;
+    max-width: 25%;
+    height: 50%;
+    filter: sepia(46%);
+    -webkit-filter: sepia(46%);
+    -moz-filter: sepia(46%);
+    &:hover{
+        filter: none;
+    }
+}

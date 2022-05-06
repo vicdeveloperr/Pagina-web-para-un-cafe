@@ -1,0 +1,20 @@
+@use "generales";
+.contenedor--menu{
+    padding: 3rem;
+    border-radius: 5px;
+    border: 8px double generales.$color1;
+    margin: 0 auto;
+}
+.container{
+    width: 50%;
+    display: inline-block;
+}
+.contenedor--tomar{
+    float: right;
+}
+.tituloSecundario--chico{
+    font-size: 3rem;
+}
+.cajitas{
+    margin: 4rem;
+}

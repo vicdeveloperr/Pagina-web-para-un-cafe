@@ -1,0 +1,150 @@
+@use "generales";
+
+/*100 px*/
+@media screen and (max-width: 1000px){
+    :root{
+        font-size: 8px;
+    }
+    /*header*/
+    .logo{
+        grid-column: 2 / 4;
+    }
+    /*Menu*/
+    .contenedor--menu{
+        padding: 1rem;
+        border: 6px double generales.$color1;
+        margin-top: 8px;
+    }
+}
+
+/*850 px*/
+@media screen and (max-width: 850px){
+    /*Galería*/
+    .galeria__img{
+        min-width: 30%;
+        max-width: 33.33%;
+        height: 25%;
+    }
+    .img--none{
+        display: none;
+    }
+}
+
+/*788 px*/
+@media screen and (max-width: 788px){
+    :root{
+        font-size: 7.2px;
+    }
+    /*Nav*/
+    .nav{
+        grid-column: 2 / 4;
+    }
+    /*Logo*/
+    .logo{
+        grid-column: 1 / 4;
+    }
+    /*Acerca de*/
+    .acercaDe__img{
+        width: 80%;
+    }
+    .acercaDe__textoContainer{
+        padding: 8px;
+        float: none;
+        width: 70%;
+        border-radius: 4px;
+        margin: auto;
+    }
+    /*Galería*/
+    .galeria__img{
+        min-width: 50%;
+        max-width: 50%;
+        height: 25%;
+    }
+    .galeria__img:nth-child(6), .galeria__img:nth-child(5){
+        display: none;
+    }
+}
+
+/*680 px*/
+@media screen and (max-width: 788px){
+    /*Nav*/
+    .nav{
+        display: none;
+    }
+    /*Acerca de*/
+    .acercaDe__img{
+        width: 83%;
+    }
+    .acercaDe__textoContainer{
+        padding: 8px;
+        float: none;
+        width: 78%;
+        border-radius: 4px;
+        margin: auto;
+    }
+}
+/*580px*/
+@media screen and (max-width: 580px){
+    /*Logo*/
+    .logo{
+        grid-column: 1 / 5;
+    }
+    .logo__textoContainer{
+        padding: 0.5rem;
+        border: none;
+    }
+    /*Acerca de*/
+    .acercaDe__img{
+        width: 85%;
+    }
+    .acercaDe__textoContainer{
+        width: 90%;
+    }
+}
+/*500px*/
+@media screen and (max-width: 580px){
+    /*Acerca de*/
+    .acercaDe{
+        background-image: url("../multimedia/acerca-de.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .acercaDe__img{
+        display: none;
+    }
+    .acercaDe__textoContainer{
+        width: 100%;
+        text-align: center;
+    }
+    /*Menu*/
+    .menu{
+        padding: 4rem 0;
+        margin: 0;
+        background: linear-gradient(#ccc, transparent);
+    }
+    .contenedor--tomar, .contenedor--comer{
+        float: none;
+        width: 100%;
+    }
+    /*Galería*/
+    .galeria{
+        margin-top: 0;
+    }
+    /*Contacto*/
+    .ubicacion, .horarios{
+        display: block;
+        width: 100%;
+    }
+    .ubicacion{
+        margin-bottom: 5rem;
+    }
+    .contenedor--contacto{
+        flex-wrap: wrap;
+    }
+}
+/*450px*/
+@media screen and (max-width: 450px) {
+    .galeria{
+        display: none;
+    }
+}

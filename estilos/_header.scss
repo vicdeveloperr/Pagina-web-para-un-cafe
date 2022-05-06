@@ -1,0 +1,58 @@
+@use "generales";
+.header{
+    width: 100%;
+    background-image: url("../multimedia/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+.contenedor--header{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr repeat(3, 1fr);
+    height: 100%;
+    margin-top: 0;
+}
+/*Nav*/
+.nav{
+    grid-column: 3 / 5;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.nav__items{
+    align-self: center;
+    margin: 1rem 1rem;
+    font-size: 2.5rem;
+    position: relative;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.animacionNav{
+    animation-name: navAnimation;
+    animation-duration: 1000ms;
+}
+
+/*Logo*/
+.logo{
+    grid-row: 2 / 4;
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.logo__textoContainer{
+    padding: 1rem;
+    border-radius: 2%;
+    box-sizing: content-box;
+}
+.tituloPrincipal{
+    font-size: 6rem;
+}
+.subtitulo{
+    font-size: 3.5rem;
+    font-weight: lighter;
+}

@@ -1,0 +1,31 @@
+@use "generales";
+.acercaDe{
+    display: inline-block;
+    padding: 3rem;
+    position: relative;
+    overflow: visible;
+    background: linear-gradient(#ccc, transparent);
+    margin-bottom: 0;
+}
+.acercaDe__img{
+    width: 60%;
+    height: 70%;
+    display: inline-block;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    position: absolute;
+    top: -30px;
+    z-index: 2;
+    margin: auto;
+}
+.acercaDe__textoContainer{
+    padding: 10px;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+    float: right;
+    width: 47%;
+    border-radius: 5px;
+}
