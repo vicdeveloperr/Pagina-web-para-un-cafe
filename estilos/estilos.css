@@ -18,6 +18,7 @@
   color: #222;
   font-size: 4rem;
   text-align: center;
+  font-style: normal;
 }
 
 .parrafo {
@@ -29,16 +30,6 @@
   font-size: 3rem;
 }
 
-@keyframes navAnimation {
-  from {
-    top: -4rem;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
 .header {
   width: 100%;
   background-image: url("../multimedia/bg.jpg");
@@ -72,11 +63,6 @@
 }
 .nav__items:hover {
   text-decoration: underline;
-}
-
-.animacionNav {
-  animation-name: navAnimation;
-  animation-duration: 1000ms;
 }
 
 /*Logo*/

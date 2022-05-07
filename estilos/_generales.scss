@@ -16,6 +16,7 @@ $color1: #222;
     color: $color1;
     font-size: 4rem;
     text-align: center;
+    font-style: normal;
 }
 .parrafo{
     color: $color1;
@@ -23,15 +24,4 @@ $color1: #222;
 }
 .resaltado{
     font-size: 3rem;
-}
-
-@keyframes navAnimation {
-    from{
-        top: -4rem;
-        opacity: 0;
-    }
-    to{
-        top: 0;
-        opacity: 1;
-    }
 }
